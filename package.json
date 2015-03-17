@@ -1,0 +1,31 @@
+{
+  "name": "push-app",
+  "version": "1.0.0",
+  "description": "Push an app to a client, uninstalling first if need be",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sole/push-app.git"
+  },
+  "keywords": [
+    "firefox",
+    "os",
+    "push",
+    "app"
+  ],
+  "author": "sole",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/sole/push-app/issues"
+  },
+  "homepage": "https://github.com/sole/push-app",
+  "dependencies": {
+    "es6-promise": "^2.0.1",
+    "node-firefox-find-app": "^1.0.0",
+    "node-firefox-install-app": "^1.0.0",
+    "node-firefox-uninstall-app": "^1.0.0"
+  }
+}
