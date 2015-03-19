@@ -31,7 +31,10 @@ function pushApp(client, appPath) {
       client: client,
       manifest: manifest
     }).then(function(apps) {
-      return apps[0];
+      return {
+        client: client,
+        app: apps[0]
+      };
     });
   });
 

@@ -1,6 +1,6 @@
 {
   "name": "push-app",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Push an app to a client, uninstalling first if need be",
   "main": "index.js",
   "scripts": {
