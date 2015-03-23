@@ -14,7 +14,13 @@ module.exports = pushApp;
 
 function pushApp(client, appPath) {
   var manifestPath = path.join(appPath, 'manifest.webapp');
-  var manifest = loadJSON(manifestPath);
+  var manifest;
+
+  try {
+	  manifest = loadJSON(manifestPath);
+  } catch(e) {
+	  return Promise.reject(e);
+  }
   
   return findApp({
     client: client,
